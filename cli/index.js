@@ -4,7 +4,7 @@ const myip = require('../exec');
 const hosts=myip();
 const printLine = () => {
   let str="";
-  for(let i=0;i<80;++i){
+  for(let i=0;i<40;++i){
     str+="~ ";
   }
   console.log(str);
