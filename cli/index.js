@@ -5,7 +5,7 @@ const hosts=myip();
 const printLine = () => {
   let str="";
   for(let i=0;i<80;++i){
-    str+="~";
+    str+="~ ";
   }
   console.log(str);
 };
