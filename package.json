@@ -1,0 +1,15 @@
+{
+  "name": "@kcak11/myip",
+  "version": "0.0.1",
+  "description": "Utility to fetch IP Addresses",
+  "main": "./exec/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "myip": "./cli/index.js"
+  },
+  "keywords": ["myip","ip","address","addresses","ip address","ip addresses","host","hosts"],
+  "author": "K.C.Ashish Kumar",
+  "license": "MIT"
+}
