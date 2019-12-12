@@ -4,10 +4,10 @@ const myip = require('../exec');
 const hosts = myip();
 const printLine = ()=>{
     let str = "";
-    for (let i = 0; i < 78; ++i) {
+    for (let i = 0; i < 80; ++i) {
         str += "~";
     }
-    console.log(`+${str}+`);
+    console.log(str);
 };
 console.log();
 console.log("Following are the IP Addresses for your machine:");
