@@ -1,10 +1,14 @@
 # MyIP - Utility for fetching IP Addresses
 
 ## Installation:
-`$ npm i -g @kcak11/myip`
+```
+$ npm i -g @kcak11/myip
+```
 
 ### Usage as Command Line Interface (CLI):
-`$ myip`
+```
+$ myip
+```
 
 The above will output the current IP addresses associated with your machine as below:
 
