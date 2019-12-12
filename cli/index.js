@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const myip = require('../exec');
+const formatter = require('./ipv4formatter');
 const hosts = myip();
 const printLine = ()=>{
     let str = "";
@@ -14,7 +15,7 @@ console.log("Following are the IP Addresses for your machine:");
 console.log();
 printLine();
 hosts.forEach(host=>{
-    console.log(host + "     | http://" + host + " (or) https://" + host);
+    console.log(formatter(host) + "     | http://" + host + " (or) https://" + host);
 });
 printLine();
 console.log("For more cool stuff, visit: https://github.com/kcak11");
