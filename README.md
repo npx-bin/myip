@@ -33,7 +33,5 @@ Output:
 ["xyz.pqr.a.b","xyz.pq.abc.def"]
 ```
 
-<br/>
-
 ## License:  [MIT License](https://mit-license.kcak11.com)
 &copy; 2019 [kcak11.com](https://www.kcak11.com "Ashish's Web")
