@@ -13,12 +13,12 @@ $ myip
 The above will output the current IP addresses associated with your machine as below:
 
 ```
-Following are the IP Addresses for your machine: 
+Following are the IP Addresses for your machine:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-xx.yy.zz.pp     | http://xx.yy.zz.pp (or) https://xx.yy.zz.pp
-aa.bb.cc.dd     | http://aa.bb.cc.dd (or) https://aa.bb.cc.dd
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+    xyz.pqr.a.b     | http://xyz.pqr.a.b         | https://xyz.pqr.a.b
+ xyz.pq.abc.def     | http://xyz.pq.abc.def      | https://xyz.pq.abc.def
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 
 ## Usage in Node Scripts
@@ -30,7 +30,7 @@ console.log(listOfIP);
 
 Output:
 ```
-["xx.yy.zz.pp","aa.bb.cc.dd"]
+["xyz.pqr.a.b","xyz.pq.abc.def"]
 ```
 
 © 2019 [kcak11.com](https://www.kcak11.com)  

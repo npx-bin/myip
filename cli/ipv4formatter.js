@@ -2,17 +2,21 @@
  * IP V4 Formatter
  * Author: @kcak11
 **/
-module.exports = function(ip) {
+module.exports = function(ip, suffixPadding) {
     if (!ip) {
         return ip;
     }
     let result = "" + ip;
     if (result.length < 15) {
-        let prefix = "";
+        let padding = "";
         for (let i = 0; i < 15 - result.length; ++i) {
-            prefix += " ";
+            padding += " ";
         }
-        result = prefix + result;
+        if (suffixPadding) {
+            result = result + padding;
+        } else {
+            result = padding + result;
+        }
     }
     return result;
 };

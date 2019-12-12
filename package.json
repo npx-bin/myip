@@ -1,6 +1,6 @@
 {
   "name": "@kcak11/myip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility to fetch IP Addresses",
   "main": "./exec/index.js",
   "scripts": {
@@ -11,5 +11,6 @@
   },
   "keywords": ["myip","ip","address","addresses","ip address","ip addresses","host","hosts"],
   "author": "K.C.Ashish Kumar",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/npx-bin/myip.git"
 }

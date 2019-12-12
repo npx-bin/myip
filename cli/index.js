@@ -15,7 +15,7 @@ console.log("Following are the IP Addresses for your machine:");
 console.log();
 printLine();
 hosts.forEach(host=>{
-    console.log(formatter(host) + "     | http://" + host + " (or) https://" + host);
+    console.log(formatter(host) + "     | http://" + formatter(host, true) + "     | https://" + host);
 });
 printLine();
 console.log("For more cool stuff, visit: https://github.com/kcak11");
