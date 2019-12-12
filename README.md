@@ -22,16 +22,16 @@ aa.bb.cc.dd     | http://aa.bb.cc.dd (or) https://aa.bb.cc.dd
 ```
 
 ## Usage in Node Scripts
-~~~
+```
 const myip=require("@kcak11/myip");
 let listOfIP = myip(); // listOfIP will be an array containing the IP addresses.
 console.log(listOfIP);
-~~~
+```
 
 Output:
-~~~
+```
 ["xx.yy.zz.pp","aa.bb.cc.dd"]
-~~~
+```
 
 © 2019 [kcak11.com](https://www.kcak11.com)  
 License: MIT (https://mit-license.kcak11.com)
