@@ -26,7 +26,7 @@ console.log(listOfIP);
 
 Output:
 ~~~
-["172.31.108.24","172.31.224.12"]
+["xx.yy.zz.pp","aa.bb.cc.dd"]
 ~~~
 
 © 2019 [kcak11.com](https://www.kcak11.com)  
