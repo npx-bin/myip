@@ -21,7 +21,7 @@ aa.bb.cc.dd     | http://aa.bb.cc.dd (or) https://aa.bb.cc.dd
 ~~~
 const myip=require("@kcak11/myip");
 let listOfIP = myip(); // listOfIP will be an array containing the IP addresses.
-console.log(listOfIp);
+console.log(listOfIP);
 ~~~
 
 Output:
