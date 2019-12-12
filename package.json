@@ -1,6 +1,6 @@
 {
   "name": "@kcak11/myip",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utility to fetch IP Addresses",
   "main": "./exec/index.js",
   "scripts": {
