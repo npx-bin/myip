@@ -1,15 +1,17 @@
 /*
- * IP V4 Formatter
+ * Formatter
  * Author: @kcak11
 **/
-module.exports = function(ip, suffixPadding) {
-    if (!ip) {
-        return ip;
+
+module.exports = function(inp, suffixPadding, length) {
+    if (!inp) {
+        return inp;
     }
-    let result = "" + ip;
-    if (result.length < 15) {
+    let size = length || 15;
+    let result = "" + inp;
+    if (result.length < size) {
         let padding = "";
-        for (let i = 0; i < 15 - result.length; ++i) {
+        for (let i = 0; i < size - result.length; ++i) {
             padding += " ";
         }
         if (suffixPadding) {

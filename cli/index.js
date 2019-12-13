@@ -1,22 +1,30 @@
 #!/usr/bin/env node
 
+/*
+ * CLI for print the IP Addresses associated with the machine
+ * Author: @kcak11
+**/
+
 const myip = require('../exec');
-const formatter = require('./ipv4formatter');
+const formatter = require('../utils/formatter');
+const {print, printLine} = require('../utils/printer');
+const chalk = require("chalk");
 const hosts = myip();
-const printLine = ()=>{
-    let str = "";
-    for (let i = 0; i < 80; ++i) {
-        str += "~";
-    }
-    console.log(str);
-};
-console.log();
-console.log("Following are the IP Addresses for your machine:");
-console.log();
-printLine();
+const BOX_SIZE = 56;
+print();
+print(chalk.red.bgWhite(` ${formatter(" ", true, BOX_SIZE + 1)}`));
+print(chalk.red.bgWhite(` ${formatter("Following are the IP Addresses for your machine:    ", true, BOX_SIZE + 1)}`));
+print(chalk.red.bgWhite(` ${formatter(" ", true, BOX_SIZE + 1)}`));
+printLine(BOX_SIZE);
+print(chalk.blue.bgWhite(formatter(` |       IP Address     | Usage in a web-browser        | `, true, BOX_SIZE + 2)));
+printLine(BOX_SIZE);
 hosts.forEach(host=>{
-    console.log(formatter(host) + "     | http://" + formatter(host, true) + "     | https://" + host);
-});
-printLine();
-console.log("For more cool stuff, visit: https://github.com/kcak11");
-console.log();
+    print(chalk.blue.bgWhite(formatter(` |  ${formatter(host)}     | http://${formatter(host, true)}        | `, true, BOX_SIZE + 2)));
+}
+);
+printLine(BOX_SIZE);
+print(chalk.red.bgWhite(` ${formatter(" ", true, BOX_SIZE + 1)}`));
+print();
+print(`For more cool stuff, visit: https://github.com/kcak11`);
+print();
+process.exit(0);
