@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
- * CLI for print the IP Addresses associated with the machine
+ * CLI to print the IP Addresses associated with the machine.
  * Author: @kcak11
 **/
 
