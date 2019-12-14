@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/npx-bin/misc/master/myip_logo.png" />
+
 # MyIP - Utility for fetching IP Addresses
 
 ## Installation:
