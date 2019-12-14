@@ -13,16 +13,18 @@ $ myip
 The above will output the current IP addresses associated with your machine as below:
 
 ```
-
+                                                          
  Following are the IP Addresses for your machine:         
-
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- |       IP Address     | Usage in a web-browser        |
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- |      xyz.pqr.a.b     | http://xyz.pqr.a.b            |
- |   xyz.pq.abc.def     | http://xyz.pq.abc.def         |
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+                                                          
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ |       IP Address     | Usage in a web-browser        | 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ |      xyz.pqr.a.b     | http://xyz.pqr.a.b            | 
+ |   xyz.pq.abc.def     | http://xyz.pq.abc.def         | 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+                                                          
+ Your External(public) IP: XXX.YY.ZZ.AAA                  
+                                                          
 ```
 
 ## Usage in Node Scripts
