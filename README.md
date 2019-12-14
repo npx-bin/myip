@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/npx-bin/misc/master/myip_logo.png" />
+<img src="https://raw.githubusercontent.com/npx-bin/misc/master/myip_logo.png" width="100%" />
 
 # MyIP - Utility for fetching IP Addresses
 
