@@ -3,18 +3,20 @@
  * Author: @kcak11
 **/
 
-module.exports = function(inp, suffixPadding, length) {
+module.exports = function(inp, cfg) {
     if (!inp) {
         return inp;
     }
-    let size = length || 15;
+    let config = cfg || {};
+    let size = config.length || 15;
     let result = "" + inp;
     if (result.length < size) {
         let padding = "";
-        for (let i = 0; i < size - result.length; ++i) {
+        let iterations = size - result.length + (config.extraPadding || 0);
+        for (let i = 0; i < iterations; ++i) {
             padding += " ";
         }
-        if (suffixPadding) {
+        if (config.suffixPadding) {
             result = result + padding;
         } else {
             result = padding + result;

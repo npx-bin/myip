@@ -1,3 +1,8 @@
+/*
+ * Fetch the Internal IP addresses for the machine.
+ * Author: @kcak11
+**/
+
 const os = require('os');
 const ifaces = os.networkInterfaces();
 
