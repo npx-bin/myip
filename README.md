@@ -25,7 +25,7 @@ The above will output the current IP addresses associated with your machine as b
  |   xyz.pq.abc.def     | http://xyz.pq.abc.def         | 
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
                                                           
- Your External(public) IP: XXX.YY.ZZ.AAA                  
+ External(public) IP: XXX.YY.ZZ.AAA                  
                                                           
 ```
 
