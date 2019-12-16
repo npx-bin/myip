@@ -8,6 +8,7 @@
 (function() {
     const myip = require('../exec');
     const externalip = require('../exec/external');
+    const pkgInfo = require('../package.json');
     const formatter = require('../utils/formatter');
     const {print, printLine} = require('../utils/printer');
     const chalk = require("chalk");
@@ -17,6 +18,8 @@
         suffixPadding: true,
         length: BOX_SIZE + 1
     })}`);
+    print();
+    print(" myip@" + pkgInfo.version + " - Determining IP Addresses . . .");
     print();
     print(EMPTY_LINE);
     print(chalk.red.bgWhite(` ${formatter("Following are the IP Addresses for your machine:    ", {
@@ -47,7 +50,7 @@
 
     externalip().then((data)=>{
         let externalIP = chalk.bold(data);
-        print(chalk.red.bgWhite(` ${formatter("Your External(public) IP: " + externalIP, {
+        print(chalk.red.bgWhite(` ${formatter("External(public) IP: " + externalIP, {
             suffixPadding: true,
             length: BOX_SIZE + 1,
             extraPadding: externalIP.length - data.length
