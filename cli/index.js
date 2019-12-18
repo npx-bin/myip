@@ -18,6 +18,13 @@
         suffixPadding: true,
         length: BOX_SIZE + 1
     })}`);
+    const readline = require('readline');
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    rl.pause();
+
     print();
     print(" myip@" + pkgInfo.version + " - Determining IP Addresses . . .");
     print();
