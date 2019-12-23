@@ -5,6 +5,8 @@
  * Author: @kcak11
 **/
 
+require('../utils/io').blockInput();
+
 (function() {
     const myip = require('../exec');
     const externalip = require('../exec/external');
@@ -18,12 +20,6 @@
         suffixPadding: true,
         length: BOX_SIZE + 1
     })}`);
-    const readline = require('readline');
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-    rl.pause();
 
     print();
     print(" myip@" + pkgInfo.version + " - Determining IP Addresses . . .");
