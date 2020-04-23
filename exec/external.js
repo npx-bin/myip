@@ -6,8 +6,13 @@
  * https://whatismyipaddress.com (Thanks for the API)
 **/
 
-const request = require("request-promise");
+const axios = require('axios');
 
 module.exports = function(action) {
-    return request("https://ipv4bot.whatismyipaddress.com/");
+    let promise = axios.get("https://ipv4bot.whatismyipaddress.com/");
+    return new Promise((resolve, reject)=>{
+        promise.then((response)=>{
+            resolve(response.data);
+        });
+    });
 };
