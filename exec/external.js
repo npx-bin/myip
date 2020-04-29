@@ -13,6 +13,8 @@ module.exports = function(action) {
     return new Promise((resolve, reject)=>{
         promise.then((response)=>{
             resolve(response.data);
+        }).catch((err)=>{
+            reject(err);
         });
     });
 };
