@@ -37,7 +37,8 @@ console.log(listOfIP);
 
 let externalIP = require("@kcak11/myip/external");
 externalIP().then((data) => {
-  console.log("External IP: " + data);
+  console.log("External IP: " + data.myip);
+  console.log("Country: " + data.country);
 });
 ```
 
@@ -45,7 +46,8 @@ Output:
 ```
 ["xyz.pqr.a.b","xyz.pq.abc.def"]
 External IP: XXX.YY.ZZ.AAA
+Country: CC
 ```
 
 ## License:  [MIT License](https://mit-license.kcak11.com)
-&copy; 2019 [kcak11.com](https://www.kcak11.com "Ashish's Web")
+&copy; 2020 [kcak11.com](https://www.kcak11.com "Ashish's Web")

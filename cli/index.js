@@ -52,11 +52,17 @@ require('../utils/io').blockInput();
     };
 
     externalip().then((data)=>{
-        let externalIP = chalk.bold(data);
+        let externalIP = chalk.bold(data.myip);
+        let country = chalk.bold(data.country);
         print(chalk.red.bgWhite(` ${formatter("External(public) IP: " + externalIP, {
             suffixPadding: true,
             length: BOX_SIZE + 1,
-            extraPadding: externalIP.length - data.length
+            extraPadding: externalIP.length - data.myip.length
+        })}`));
+        print(chalk.red.bgWhite(` ${formatter("Country: " + country, {
+            suffixPadding: true,
+            length: BOX_SIZE + 1,
+            extraPadding: country.length - data.country.length
         })}`));
         print(EMPTY_LINE);
         endProg();
