@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": "https://github.com/npx-bin/myip.git",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chalk": "^4.0.0"
   }
 }
