@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 });
 
 module.exports = {
-  blockInput: function(){
+  blockInput: function () {
     rl.pause();
   }
 };

@@ -7,12 +7,12 @@
 
 require('../utils/io').blockInput();
 
-(function() {
+(function () {
     const myip = require('../exec');
     const externalip = require('../exec/external');
     const pkgInfo = require('../package.json');
     const formatter = require('../utils/formatter');
-    const {print, printLine} = require('../utils/printer');
+    const { print, printLine } = require('../utils/printer');
     const chalk = require("chalk");
     const hosts = myip();
     const BOX_SIZE = 56;
@@ -33,7 +33,7 @@ require('../utils/io').blockInput();
     printLine(BOX_SIZE);
     print(chalk.blue.bgWhite(formatter(` |       IP Address     | Usage in a web-browser        | `, true, BOX_SIZE + 2)));
     printLine(BOX_SIZE);
-    hosts.forEach(host=>{
+    hosts.forEach(host => {
         let hostText = chalk.bold(host);
         print(chalk.blue.bgWhite(formatter(` |  ${formatter(hostText, {
             length: 15 + hostText.length - host.length
@@ -44,14 +44,14 @@ require('../utils/io').blockInput();
     printLine(BOX_SIZE);
     print(EMPTY_LINE);
 
-    let endProg = function() {
+    let endProg = function () {
         print();
         print(`For more cool stuff, visit: https://github.com/kcak11`);
         print();
         process.exit(0);
     };
 
-    externalip().then((data)=>{
+    externalip().then((data) => {
         let externalIP = chalk.bold(data.myip);
         let country = chalk.bold(data.country);
         print(chalk.red.bgWhite(` ${formatter("External(public) IP: " + externalIP, {
@@ -66,7 +66,7 @@ require('../utils/io').blockInput();
         })}`));
         print(EMPTY_LINE);
         endProg();
-    }).catch(()=>{
+    }).catch((err) => {
         endProg();
     });
 })();

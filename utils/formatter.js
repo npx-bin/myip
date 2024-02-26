@@ -3,7 +3,7 @@
  * Author: @kcak11
 **/
 
-module.exports = function(inp, cfg) {
+module.exports = function (inp, cfg) {
     if (!inp) {
         return inp;
     }

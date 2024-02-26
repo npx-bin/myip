@@ -6,10 +6,10 @@
 const chalk = require("chalk");
 
 module.exports = {
-    print: function() {
+    print: function () {
         console.log.apply(console, arguments);
     },
-    printLine: function(length) {
+    printLine: function (length) {
         let str = "";
         for (let i = 0; i < length; ++i) {
             str += "~";

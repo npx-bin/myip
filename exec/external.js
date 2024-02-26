@@ -8,12 +8,12 @@
 
 const axios = require('axios');
 
-module.exports = function(action) {
-    let promise = axios.get("https://cors.kcak11.com/?myip=yes");
-    return new Promise((resolve, reject)=>{
-        promise.then((response)=>{
+module.exports = function (action) {
+    let promise = axios.get("https://cors.kcak11.workers.dev/?myip=yes");
+    return new Promise((resolve, reject) => {
+        promise.then((response) => {
             resolve(response.data);
-        }).catch((err)=>{
+        }).catch((err) => {
             reject(err);
         });
     });
